@@ -1,0 +1,106 @@
+.panel {
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--panel-border);
+}
+
+.panelTitle {
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.panelMeta {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--panel-border);
+  transition: background 0.15s ease;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.rowLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chainDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.chainName {
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.chainSymbol {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.rowRight {
+  text-align: right;
+}
+
+.balance {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.balanceUsd {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+
+.change {
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+}
+
+.changeUp {
+  color: #6bffb0;
+}
+
+.changeDown {
+  color: var(--danger);
+}
+
+.skeleton {
+  color: var(--ink-faint);
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+}
